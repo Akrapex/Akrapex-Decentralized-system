@@ -3,7 +3,23 @@ import React from 'react'
 const DontJustInvest = () => {
   return (
     <div className=" py-20 bg-[#15152D]">
-      <div className=" max-w-[1440px] w-full mx-auto ">
+      <div className=" max-w-[1440px] w-full mx-auto h-[433px] relative mt-10">
+        <div
+          style={{
+            position: "absolute",
+            top: "23%",
+            transform: "translateY(-50%)",
+            right: "-14rem",
+            zIndex: 0,
+          }}
+        >
+          <img
+            src="/src/assets/Images/bg.invest.svg"
+            alt="bg-invest"
+            className="w-[450px]"
+          />
+        </div>
+
         <h3 className="text-[4rem] font-bold font-Grotesk text-white text-center m-auto">
           Dont just invest, stay informed
         </h3>

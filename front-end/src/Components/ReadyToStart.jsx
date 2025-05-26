@@ -2,7 +2,7 @@ import React from 'react'
 
 const ReadyToStart = () => {
   return (
-    <div className="max-w-[1440px] w-full mx-auto ">
+    <div className="max-w-[1440px] w-full mx-auto py-20">
       <h3 className="text-[4rem] font-bold font-Grotesk w-[1284px] leading-tight">
         Ready to start investing in the future of real estate
       </h3>
