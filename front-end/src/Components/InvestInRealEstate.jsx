@@ -1,15 +1,25 @@
 
 import BuildersAndBelivers from './BuildersAndBelivers';
 import DontJustInvest from './DontJustInvest';
+import FeaturedProperties from './FeaturedProperties';
 import Footer from './Footer';
 import JoinMovement from './JoinMovement';
+import NavBar from './Layouts/NavBar';
 import ReadyToStart from './ReadyToStart';
+import RealEstateBlockchain from './RealEstateBlockchain';
 import SUbstainableRealestate from './SUbstainableRealestate';
 
 const InvestInRealEstate = () => {
   return (
     <>
       <section>
+        <div className="bg-primary text-white border-b border-tertiary">
+          <div className="max-w-[1440px] w-full mx-auto  py-8">
+            <NavBar />
+            <RealEstateBlockchain/>
+            <FeaturedProperties/>
+          </div>
+        </div>
         <div className="bg-primary">
           <SUbstainableRealestate />
           <BuildersAndBelivers
