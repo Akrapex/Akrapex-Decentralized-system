@@ -7,9 +7,13 @@ const RealEstateBlockchain = () => {
         Revolutionizing Real Estate With Blockchain
       </h2>
       <div className="flex relative">
-        <div className='space-y-5'>
+        <div className="space-y-5">
           <h3 className="text-5xl font-bold font-Grotesk w-[827px]">
-            Own a piece of the future sustainably on blockchain
+            Own a piece of the future{" "}
+            <span className="text-5xl font-bold bg-gradient-to-r from-[#34D48E] to-[#2C4EFE] text-transparent bg-clip-text">
+              sustainably
+            </span>{" "}
+            on blockchain
           </h3>
           <p className="text-[1.625rem] text-light w-[658px]">
             Invest in sustainable real estate, earn rewards, and influence
