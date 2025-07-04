@@ -9,16 +9,19 @@ export default {
       },
       colors: {
         primary: {
-          DEFAULT: "#0A0A23",
+          DEFAULT: "#27516C",
         },
         secondary: {
-          DEFAULT: "#141F39",
+          DEFAULT: "#000000",
         },
         tertiary: {
           DEFAULT: "#20B2AA",
         },
         light: {
           DEFAULT: "#FFFFFF99",
+        },
+        yellow: {
+          DEFAULT: "#E5BD3E",
         },
       },
     },

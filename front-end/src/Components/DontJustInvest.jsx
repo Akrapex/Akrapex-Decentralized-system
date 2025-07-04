@@ -2,7 +2,7 @@ import React from 'react'
 
 const DontJustInvest = () => {
   return (
-    <div className=" py-20 bg-[#15152D]">
+    <div className=" py-20 bg-primary">
       <div className=" max-w-[1440px] w-full mx-auto h-[433px] relative mt-10">
         <div
           style={{
@@ -36,9 +36,9 @@ const DontJustInvest = () => {
             />
             <button
               type="submit"
-              className="px-14 py-1 text-xl font-medium text-white bg-tertiary hover:bg-tertiary focus:outline-none rounded-[20px]"
+              className="px-14 py-1 text-xl font-medium text-white bg-yellow hover:bg-tertiary focus:outline-none rounded-[20px]"
             >
-              Subscribe
+              Start investing
             </button>
           </form>
         </div>

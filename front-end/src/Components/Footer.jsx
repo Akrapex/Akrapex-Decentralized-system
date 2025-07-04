@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary pt-36 text-white">
+    <footer className="bg-primary pt-36 text-white">
       <div className=" max-w-[1440px] w-full mx-auto flex justify-between">
         <div>
           <img src="/src/assets/Images/footer-logo.png" alt="footer-logo" />

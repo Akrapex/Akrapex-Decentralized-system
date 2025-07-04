@@ -15,12 +15,11 @@ const InvestInRealEstate = () => {
       <section>
         <div className="bg-primary text-white border-b border-tertiary">
           <div className="max-w-[1440px] w-full mx-auto  py-8">
-            <NavBar />
-            <RealEstateBlockchain/>
-            <FeaturedProperties/>
+            <RealEstateBlockchain />
           </div>
         </div>
-        <div className="bg-primary">
+        <div className="bg-white">
+          <FeaturedProperties />
           <SUbstainableRealestate />
           <BuildersAndBelivers
             title="Where Builders, Believers, and Change-Makers Invest Differently"
@@ -32,7 +31,6 @@ const InvestInRealEstate = () => {
         <DontJustInvest />
         <ReadyToStart />
       </section>
-      <Footer />
     </>
   );
 }

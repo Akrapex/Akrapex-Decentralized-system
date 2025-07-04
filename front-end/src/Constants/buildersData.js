@@ -1,26 +1,36 @@
+
 export const buildersData = [
   {
+    id: 1,
     image: "/src/assets/Images/accessOwership.svg",
-    title: "Accessible Ownership",
+    title: "Sign up & verify",
     description:
-      "Start with just a few dollars and own a share of real, income-generating property",
+      "Create your account and complete KYC verification. Choose your role: Investor, Developer, Agent, or Buyer.",
+    list: ["Identity Verification", "Role Selection", "Wallet Setup"],
   },
   {
+    id: 2,
     image: "/src/assets/Images/ecoFirst.svg",
-    title: "Eco-First Focus",
+    title: "Explore & connect",
     description:
-      "Every building is selected or upgraded with sustainability at its core",
+      "Browse tokenized properties, find development projects, or connect with verified stakeholders using our AI matchmaking.",
+    list: ["Property Discovery", "Stakeholder Matching", "AI Recommendations"],
   },
   {
+    id: 3,
     image: "/src/assets/Images/noBanks.svg",
-    title: "No Banks, No Barriers",
+    title: "Invest & transact",
     description:
-      "Buy, earn, and vote directly through your wallet—simple, secure, and global",
+      "Purchase property tokens, fund DAO projects, or complete traditional transactions with smart contract security.",
+      list: ["Token Investment, Smart Contracts, Secure Payments"],
+    
   },
   {
+    id: 4,
     image: "/src/assets/Images/communityPowred.svg",
-    title: "Community Powered",
+    title: "Manage & grow",
     description:
-      "No landlords, just people like you voting on what gets built, fixed, or improved",
+      "Track your portfolio, participate in governance, and watch your investments grow with real-time analytics.",
+      list: ["Portfolio Tracking, DAO Governance, Real-time Analytics"]
   },
 ];
