@@ -18,7 +18,7 @@ export const powerfulFeatures = [
       "An intelligent system that instantly connects users to the right vendor or support.",
   },
   {
-    image: "/src/assets/Images/marketPlace.svg",
+    image: "/src/assets/Images/verifiedService.svg",
     title: "Verified Service Directory",
     description:
       "Connect with trusted service providers through our verified directory of professionals",
@@ -30,7 +30,7 @@ export const powerfulFeatures = [
       "Complete asset tracking lifecycle from acquisition to disposal for buildings, units, and equipment",
   },
   {
-    image: "/src/assets/Images/search-icon.svg",
+    image: "/src/assets/Images/smartListing.svg",
     title: "Smart Listings",
     description:
       "AI-powered property suggestions tailored to your budget, size, and location.",

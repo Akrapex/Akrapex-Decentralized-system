@@ -1,5 +1,6 @@
 
-import { paymentData } from '../Constants/paymentData'
+import { buildersData } from '../Constants/buildersData';
+
 
 const SUbstainableRealestate = () => {
   return (
@@ -13,7 +14,7 @@ const SUbstainableRealestate = () => {
             All you need is your phone or wallet to start owning a piece of
             verified green property.
           </p>
-          {paymentData.map(({ id, image, title, description, }) => (
+          {buildersData.map(({ id, image, title, description, list }) => (
             <div
               key={id}
               className="bg-primary border border-[#00C2FF] w-[1223px] flex gap-10 py-4 px-8 rounded-lg mt-12"
@@ -26,9 +27,10 @@ const SUbstainableRealestate = () => {
                 <p className="text-xl font-inter w-[806px] pt-2 text-[#FFFFFF99]">
                   {description}
                 </p>
-                {/* <ul className="list-disc ml-5 text-xl font-normal text-[#FFFFFF99] pt-4 space-y-2">
-                  
-                </ul> */}
+                <ul className="list-disc ml-5 text-xl font-normal text-[#FFFFFF99] pt-4 space-y-2">
+                   {Array.isArray(list) &&
+                  list.map((item, id) => <li key={id}>{item}</li>)}
+                </ul> 
               </div>
             </div>
           ))}

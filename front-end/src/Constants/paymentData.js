@@ -1,26 +1,38 @@
-export const paymentData = [
+export const powerfulFeatures = [
   {
-    image: "/src/assets/Images/connect-Wallect.svg",
-    title: "Connect Wallet",
+    image: "/src/assets/Images/marketPlace.svg",
+    title: "Real Estate Marketplace",
     description:
-      "Link your crypto currency wallet like metamask to securely assess our platform and manage your assets.",
+      "Search, compare, book, and list properties all in one place with our comprehensive marketplace.",
   },
   {
-    image: "/src/assets/Images/Browse-Properties.svg",
-    title: "Browse Properties",
+    image: "/src/assets/Images/utilityManagement.svg",
+    title: "Utility Management",
     description:
-      "Explore our curated selection of tokenized properties from around the world with complete transparency.",
+      "Efficiently manage utilities and report maintenance issues through our intuitive platform",
   },
   {
-    image: "/src/assets/Images/purschaseToken.svg",
-    title: "Purchase Tokens",
+    image: "/src/assets/Images/chatbot.svg",
+    title: "AI Chatbot Support",
     description:
-      "Buy full or fractional properties using cryptocurrency, with all transactions recorded on the blockchain.",
+      "An intelligent system that instantly connects users to the right vendor or support.",
   },
   {
-    image: "/src/assets/Images/manageInvestment.svg",
-    title: "Manage investments",
+    image: "/src/assets/Images/verifiedService.svg",
+    title: "Verified Service Directory",
     description:
-      "Track performance, collect rental income and trade your property tokens on our secondary marketplace.",
+      "Connect with trusted service providers through our verified directory of professionals",
+  },
+  {
+    image: "/src/assets/Images/inentory.svg",
+    title: "Inventory Management",
+    description:
+      "Complete asset tracking lifecycle from acquisition to disposal for buildings, units, and equipment",
+  },
+  {
+    image: "/src/assets/Images/smartListing.svg",
+    title: "Smart Listings",
+    description:
+      "AI-powered property suggestions tailored to your budget, size, and location.",
   },
 ];
