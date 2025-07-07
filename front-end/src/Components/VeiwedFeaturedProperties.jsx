@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { AISuggestion, Bedrooms, features, propertyTypes } from '../Constants/propertyTypes';
 import Apartments from './Apartments';
 import ListYourProperty from './ListYourProperty';
@@ -11,9 +12,11 @@ const VeiwedFeaturedProperties = () => {
           <p className="text-[1.625rem] font-normal text-primary">
             Handpicked properties that match current market trends
           </p>
-          <button className="text-xl text-white font-medium font-inter bg-yellow py-3 px-8 rounded-[20px] my-10">
-            View all properties
-          </button>
+          <Link to="/communityhub">
+            <button className="text-xl text-white font-medium font-inter bg-yellow py-3 px-8 rounded-[20px] my-10">
+              View all properties
+            </button>
+          </Link>
         </div>
         <div className="flex gap-10">
           <div className="shadow-lg w-[411px] h-[1387px] px-10 mb-20">

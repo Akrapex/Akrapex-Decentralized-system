@@ -14,7 +14,7 @@ const DontJustInvest = () => {
           }}
         >
           <img
-            src="/src/assets/Images/bg.invest.svg"
+            src="/Images/bg.invest.svg"
             alt="bg-invest"
             className="w-[450px]"
           />
