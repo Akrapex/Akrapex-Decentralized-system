@@ -17,7 +17,7 @@ const ReadyToStart = () => {
         Schedule a demo
       </button>
       <img
-        src="/src/assets/Images/realEstate-House.svg"
+        src="/Images/realEstate-House.svg"
         alt=""
         className="py-10"
       />

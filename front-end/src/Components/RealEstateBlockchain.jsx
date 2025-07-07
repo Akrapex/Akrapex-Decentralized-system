@@ -27,12 +27,12 @@ const RealEstateBlockchain = () => {
         </div>
         <div className="">
           <img
-            src="/src/assets/Images/house1.svg"
+            src="/Images/house1.svg"
             alt="house1"
             className="absolute bottom-[40%]"
           />
           <img
-            src="/src/assets/Images/house2.svg"
+            src="/Images/house2.svg"
             alt="house2"
             className="absolute top-20 right-8"
           />

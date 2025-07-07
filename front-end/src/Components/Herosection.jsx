@@ -2,7 +2,7 @@ import React from 'react'
 
 const Herosection = () => {
   return (
-    <section className=" bg-primary">
+    <section className=" bg-primary py-10">
       <div className="max-w-[1440px] mx-auto">
         <div className="text-center pt-10">
           <h1 className="text-[4.625rem] font-bold font-Grotesk text-white">
@@ -13,13 +13,13 @@ const Herosection = () => {
             and verified professionals
           </h3>
         </div>
-        <div className="bg-white shadow-md rounded-2xl w-[1238px] px-10 py-14 my-32">
+        <div className="bg-white shadow-md rounded-2xl w-[1238px] px-10 py-12 my-10">
           <div className="flex items-center gap-6">
             <div>
               <h4 className="text-2xl font-inter font-normal pb-2">Location</h4>
               <div className="w-[310px] border border-secondary pt-4 rounded-[12px]">
                 <img
-                  src="src/assets/Images/search-icon.svg"
+                  src="/Images/search-icon.svg"
                   alt="search-icon"
                   className="w-[44px] ml-4 py-2"
                 />
@@ -31,7 +31,7 @@ const Herosection = () => {
               </h4>
               <div className="w-[259px] border border-secondary pt-4 rounded-[12px]">
                 <img
-                  src="/src/assets/Images/protoype.svg"
+                  src="/Images/protoype.svg"
                   alt="search-icon"
                   className="w-[25px] ml-56 py-6"
                 />
@@ -44,7 +44,7 @@ const Herosection = () => {
               <div className="w-[259px] border border-secondary pt-4 rounded-[12px] flex items-center gap-32 px-4">
                 <p className="text-xl text-secondary font-normal">1m-4m</p>
                 <img
-                  src="/src/assets/Images/protoype.svg"
+                  src="/Images/protoype.svg"
                   alt="search-icon"
                   className="w-[25px] py-6"
                 />
@@ -53,7 +53,7 @@ const Herosection = () => {
             <div className='mt-10'>
               <div className="w-[259px] border border-secondary pt-4 rounded-[12px] flex items-center gap-20 px-4">
                 <img
-                  src="src/assets/Images/search-icon.svg"
+                  src="/Images/search-icon.svg"
                   alt="search-icon"
                   className="w-[45px] py-2"
                 />

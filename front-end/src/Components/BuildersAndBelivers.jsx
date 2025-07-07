@@ -18,7 +18,7 @@ const BuildersAndBelivers = ({title, description}) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10">
           <div className="bg-[#254F6A33] w-[330px] h-[374px]  py-20 px-5 rounded-[10px]">
             <img
-              src="/src/assets/Images/accessOwership.svg"
+              src="/Images/accessOwership.svg"
               alt="access-ownership"
               className="ml-28 py-6 text-yellow"
             />
@@ -32,7 +32,7 @@ const BuildersAndBelivers = ({title, description}) => {
           </div>
           <div className="bg-[#254F6A33] w-[330px] h-[374px]  py-20 px-5 rounded-[10px] mt-10">
             <img
-              src="/src/assets/Images/ecoFirst.svg"
+              src="/Images/ecoFirst.svg"
               alt="eco-first"
               className="ml-28 py-6"
             />
@@ -46,7 +46,7 @@ const BuildersAndBelivers = ({title, description}) => {
           </div>
           <div className="bg-[#254F6A33] w-[330px] h-[374px]  py-20 px-5 rounded-[10px]">
             <img
-              src="/src/assets/Images/noBanks.svg"
+              src="/Images/noBanks.svg"
               alt="access-ownership"
               className="ml-28 py-6"
             />
@@ -60,7 +60,7 @@ const BuildersAndBelivers = ({title, description}) => {
           </div>
           <div className="bg-[#254F6A33] w-[330px] h-[374px]  py-20 px-5 rounded-[10px] mt-10">
             <img
-              src="/src/assets/Images/communityPowred.svg"
+              src="/Images/communityPowred.svg"
               alt="access-ownership"
               className="ml-28 py-6"
             />

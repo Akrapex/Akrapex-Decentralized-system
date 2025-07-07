@@ -20,7 +20,7 @@ const FeaturedProperties = ({ progress }) => {
       <div className="flex items-center  gap-10">
         {propertiesData.map(({ id, location, profit, title, detials }) => (
           <div className="rounded-xl bg-primary w-[587px] my-16" key={id}>
-            <img src="/src/assets/Images/house3.svg" alt="house3" />
+            <img src="/Images/house3.svg" alt="house3" />
             <div className="flex items-center justify-between px-3">
               <p className="text-white text-2xl w-[288px] font-medium py-5">
                 {location}

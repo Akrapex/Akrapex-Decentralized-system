@@ -2,7 +2,7 @@
 export const buildersData = [
   {
     id: 1,
-    image: "/src/assets/Images/connect-Wallect.svg",
+    image: "/Images/connect-Wallect.svg",
     title: "Sign up & verify",
     description:
       "Create your account and complete KYC verification. Choose your role: Investor, Developer, Agent, or Buyer.",
@@ -10,7 +10,7 @@ export const buildersData = [
   },
   {
     id: 2,
-    image: "/src/assets/Images/Browse-Properties.svg",
+    image: "/Images/Browse-Properties.svg",
     title: "Explore & connect",
     description:
       "Browse tokenized properties, find development projects, or connect with verified stakeholders using our AI matchmaking.",
@@ -18,7 +18,7 @@ export const buildersData = [
   },
   {
     id: 3,
-    image: "/src/assets/Images/Frame 1707480282.svg",
+    image: "/Images/Frame 1707480282.svg",
     title: "Invest & transact",
     description:
       "Purchase property tokens, fund DAO projects, or complete traditional transactions with smart contract security.",
@@ -27,7 +27,7 @@ export const buildersData = [
   },
   {
     id: 4,
-    image: "/src/assets/Images/manageInvestment.svg",
+    image: "/Images/manageInvestment.svg",
     title: "Manage & grow",
     description:
       "Track your portfolio, participate in governance, and watch your investments grow with real-time analytics.",

@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-primary pt-36 text-white">
       <div className=" max-w-[1440px] w-full mx-auto flex justify-between">
         <div>
-          <img src="/src/assets/Images/footer-logo.png" alt="footer-logo" />
+          <img src="/Images/footer-logo.png" alt="footer-logo" />
           <p className="text-xl font-normal font-inter text-light w-[377px] pt-5">
             A decentralized platform where anyone can invest in sustainable
             properties and help decide what gets built.
@@ -40,17 +40,17 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-4 pt-6">
             <img
-              src="/src/assets/Images/linkedin.svg"
+              src="/Images/linkedin.svg"
               alt="facebook"
               className="bg-white p-2 rounded-full"
             />
             <img
-              src="/src/assets/Images/instagram.svg"
+              src="/Images/instagram.svg"
               alt="facebook"
               className="bg-white p-2 rounded-full"
             />
             <img
-              src="/src/assets/Images/Facebook.svg"
+              src="/Images/Facebook.svg"
               alt="facebook"
               className="bg-white p-2 rounded-full"
             />

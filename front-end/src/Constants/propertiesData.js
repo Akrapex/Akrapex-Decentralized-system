@@ -1,5 +1,4 @@
-import { BiMessageRounded } from "react-icons/bi";
-import { IoCallOutline } from "react-icons/io5";
+
 
 
 export const propertiesData = [
@@ -24,18 +23,48 @@ export const BedroomApartment = [
     id: 1,
     amount: "#45,000,000",
     location: "3, Bedroom Apartment in Victoria Island",
+    person: "/Images/symbolsPerson-outline.svg",
     title: "Sarah Johnson",
     detials: "3 bed 2 bath 120 sqm",
+    parking: "parking",
+    pool: "Pool",
     visit: "schedule  a visit",
-    icons: [<BiMessageRounded />, <IoCallOutline />],
+    image: ["/Images/message.svg", "/Images/call.svg"],
   },
   {
     id: 2,
     amount: "#45,000,000",
     location: "3, Bedroom Apartment in Victoria Island",
+    person: "/Images/symbolsPerson-outline.svg",
     title: "Sarah Johnson",
     detials: "3 bed 2 bath 120 sqm",
+    parking: "parking",
+    pool: "Pool",
     visit: "schedule  a visit",
-    icons: [<BiMessageRounded />, <IoCallOutline />],
+    image: ["/Images/message.svg", "/Images/call.svg"],
+  },
+  {
+    id: 3,
+    amount: "#45,000,000",
+    location: "3, Bedroom Apartment in Victoria Island",
+    person: "/Images/symbolsPerson-outline.svg",
+    title: "Sarah Johnson",
+    detials: "3 bed 2 bath 120 sqm",
+    parking: "parking",
+    pool: "Pool",
+    visit: "schedule  a visit",
+    image: ["/Images/message.svg", "/Images/call.svg"],
+  },
+  {
+    id: 4,
+    amount: "#45,000,000",
+    location: "3, Bedroom Apartment in Victoria Island",
+    person: "/Images/symbolsPerson-outline.svg",
+    title: "Sarah Johnson",
+    detials: "3 bed 2 bath 120 sqm",
+    parking: "parking",
+    pool: "Pool",
+    visit: "schedule  a visit",
+    image: ["/Images/message.svg", "/Images/call.svg"],
   },
 ];
