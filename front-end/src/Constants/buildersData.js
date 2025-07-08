@@ -22,7 +22,7 @@ export const buildersData = [
     title: "Invest & transact",
     description:
       "Purchase property tokens, fund DAO projects, or complete traditional transactions with smart contract security.",
-      list: ["Token Investment, Smart Contracts, Secure Payments"],
+      list: ["Token Investment", "Smart Contracts", "Secure Payments"],
     
   },
   {
@@ -31,6 +31,6 @@ export const buildersData = [
     title: "Manage & grow",
     description:
       "Track your portfolio, participate in governance, and watch your investments grow with real-time analytics.",
-      list: ["Portfolio Tracking, DAO Governance, Real-time Analytics"],
+      list: ["Portfolio Tracking", "DAO Governance", "Real-time Analytics"],
   },
 ];

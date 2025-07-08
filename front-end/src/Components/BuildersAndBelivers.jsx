@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const BuildersAndBelivers = ({title, description}) => {
@@ -10,9 +11,11 @@ const BuildersAndBelivers = ({title, description}) => {
         <p className="text-[1.75rem] font-normal font-inter text-primary w-[550px] pt-7">
           {description}
         </p>
-        <button className="text-xl text-white font-medium font-inter bg-yellow py-2 px-10 rounded-[20px] mt-20">
-          View all properties
-        </button>
+        <Link to="/marketPlace">
+          <button className="text-xl text-white font-medium font-inter bg-yellow py-2 px-10 rounded-[20px] mt-20">
+            View all properties
+          </button>
+        </Link>
       </div>
       <div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10">

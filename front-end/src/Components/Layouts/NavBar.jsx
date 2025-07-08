@@ -10,7 +10,7 @@ const NavBar = () => {
           <NavLink to="#">Properties</NavLink>
           <NavLink to="#">How it works</NavLink>
         </div>
-        <Link to="#">
+        <Link to="/">
           <button className="text-xl text-[#27516C] font-medium font-inter bg-[#E5BD3E] py-2 px-10 rounded-[20px] ">
             Get Started
           </button>

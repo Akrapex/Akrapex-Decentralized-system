@@ -1,6 +1,7 @@
 import React from 'react'
 import { propertiesData } from '../Constants/propertiesData';
 import { powerfulFeatures } from '../Constants/powerfulFeatures';
+import { Link } from 'react-router-dom';
 
 const FeaturedProperties = ({ progress }) => {
   return (
@@ -13,9 +14,11 @@ const FeaturedProperties = ({ progress }) => {
           Own with peace of mind , these properties are secured by smart
           contracts. No middleman, just transparency and trust
         </p>
-        <button className="text-xl text-white font-medium font-inter bg-yellow py-3 px-8 rounded-[20px] mt-10">
-          View all properties
-        </button>
+        <Link to="/marketplace">
+          <button className="text-xl text-white font-medium font-inter bg-yellow py-3 px-8 rounded-[20px] mt-10">
+            View all properties
+          </button>
+        </Link>
       </div>
       <div className="flex items-center  gap-10">
         {propertiesData.map(({ id, location, profit, title, detials }) => (
@@ -38,9 +41,11 @@ const FeaturedProperties = ({ progress }) => {
               />
             </div>
             <div className=" text-center mx-auto pb-8">
-              <button className="text-xl text-yellow  font-medium font-inter py-2 px-6 rounded-[20px] mt-10 ml-6  border hover:bg-tertiary  border-yellow">
-                {detials}
-              </button>
+              <Link to="/marketplace">
+                <button className="text-xl text-yellow  font-medium font-inter py-2 px-6 rounded-[20px] mt-10 ml-6  border hover:bg-tertiary  border-yellow">
+                  {detials}
+                </button>
+              </Link>
             </div>
           </div>
         ))}

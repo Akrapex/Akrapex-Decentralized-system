@@ -8,7 +8,7 @@ const AvailableRoom = () => {
       <div className="w-full max-w-[1440px] mx-auto">
         <div className="flex items-center justify-between ">
           <h4 className="text-5xl text-secondary font-bold">Available Rooms</h4>
-          <Link to="/communityhub">
+          <Link to="/marketplace">
             <button className="text-xl text-white font-medium font-inter bg-yellow py-3 px-8 rounded-[20px] my-10 ">
               Create A Room
             </button>

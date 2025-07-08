@@ -3,7 +3,7 @@ import React from 'react'
 const CommunityHero = () => {
   return (
     <section className=" bg-white text-secondary ">
-      <div className="max-w-[1440px] mx-auto shadow-lg my-10">
+      <div className="max-w-[1440px] mx-auto shadow-lg my-10 py-20">
         <div className="text-center pt-10">
           <h1 className="text-[4.625rem] font-bold font-Grotesk text-secondary">
             Community Hub
