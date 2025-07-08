@@ -13,7 +13,7 @@ const Herosection = () => {
             and verified professionals
           </h3>
         </div>
-        <div className="bg-white shadow-md rounded-2xl w-[1238px] px-10 py-12 my-10">
+        <div className="bg-white shadow-md rounded-2xl w-[1238px] px-10 py-12 my-10 m-auto">
           <div className="flex items-center gap-6">
             <div>
               <h4 className="text-2xl font-inter font-normal pb-2">Location</h4>

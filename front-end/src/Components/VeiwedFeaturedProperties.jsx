@@ -18,7 +18,7 @@ const VeiwedFeaturedProperties = () => {
             </button>
           </Link>
         </div>
-        <div className="flex gap-10">
+        <div className="flex  gap-10">
           <div className="shadow-lg w-[411px] h-[1387px] px-10 mb-20">
             <p className="text-2xl font-medium font-Grotesk text-secondary py-10">
               Filter
