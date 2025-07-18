@@ -1,14 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import "./index.css"
+import { Route, Routes } from "react-router-dom";
+import InvestInRealEstate from "./Components/InvestInRealEstate";
+import Footer from "./Components/Footer";
+import NavBar from "./Components/Layouts/NavBar";
+import MarketPlace from "./Pages/MarketPlace";
+import CommunityHub from "./Pages/CommunityHub";
 
-function App() {
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
-}
+    <>
+      <NavBar />
+      <Routes>
+        <Route path="/">
+          <Route index element={<InvestInRealEstate />} />
+          <Route path="/marketplace" element={<MarketPlace />} />
+          <Route path="/communityhub" element={<CommunityHub/>}/>
+        </Route>
+      </Routes>
+      <Footer />
+    </>
+  );
+};
 
 export default App;
