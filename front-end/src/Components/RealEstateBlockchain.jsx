@@ -18,12 +18,12 @@ const RealEstateBlockchain = () => {
           </p>
           <Link to="marketPlace">
             <button className="block md:inline-block  text-white font-medium font-inter bg-yellow py-2 px-8 rounded-[20px] mt-10">
-              Browse properties
+              Join waitlist
             </button>
           </Link>
-          <button className="block md:inline-block  text-yellow font-medium font-inter py-2 px-9 rounded-[20px] mt-10 md:ml-6  border hover:bg-tertiary  border-yellow">
+          {/* <button className="block md:inline-block  text-yellow font-medium font-inter py-2 px-9 rounded-[20px] mt-10 md:ml-6  border hover:bg-tertiary  border-yellow">
             Learn how it works
-          </button>
+          </button> */}
         </div>
         <div className=" lg:w-3/6 relative w-[90%] mx-auto mt-10">
           <img

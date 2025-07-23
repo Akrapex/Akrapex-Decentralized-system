@@ -7,7 +7,7 @@ const SUbstainableRealestate = () => {
     <>
       <div className="bg-primary py-40 text-white p-5">
         <div className="max-w-[1440px] w-full mx-auto ">
-          <h2 className=" font-bold font-Grotesk  leading-none text-center  m-auto w-11/12 lg:text-5xl text-3xl">
+          <h2 className=" font-bold font-Grotesk  leading-none text-center  m-auto w-[90%] lg:text-5xl text-3xl">
             We make it easy to invest in sustainable real estate from anywhere
           </h2>
           <p className="font-normal font-inter text-center  m-auto w-full pt-6 text-[#FFFFFF99]">
@@ -17,7 +17,7 @@ const SUbstainableRealestate = () => {
           {buildersData.map(({ id, image, title, description, list }) => (
             <div
               key={id}
-              className="bg-primary border border-[#00C2FF] m-auto md:flex gap-10 py-4 px-8 rounded-lg mt-12 w-[70%]"
+              className="bg-primary border border-[#00C2FF] m-auto md:flex gap-10 py-4 px-8 rounded-lg mt-12 w-[80%] lg:w-[70%]"
             >
               <div>
                 <img src={image} alt="connectWallect" />

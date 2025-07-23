@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-primary pt-36 text-white">
       <div className="w-11/12 lg:w-full mx-auto flex lg:justify-around flex-wrap  lg:flex-nowrap">
         <div className='w-3/6 lg:w-[400px]'> 
-          <img src="/Images/footer-logo.png" alt="footer-logo" className='w-[80%]*'/>
+          <img src="/Images/footer-logo.png" alt="footer-logo" className='w-[70%] md:w-auto inline-block md:inline*'/>
           <p className=" font-normal font-inter text-light pt-5 w-[80%] mb-5">
             A decentralized platform where anyone can invest in sustainable
             properties and help decide what gets built.

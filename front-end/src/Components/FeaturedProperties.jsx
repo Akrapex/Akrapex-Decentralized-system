@@ -15,9 +15,9 @@ const FeaturedProperties = ({ progress }) => {
           contracts. No middleman, just transparency and trust
         </p>
         
-            <button className="block md:inline-block  text-white font-medium font-inter bg-yellow py-2 px-8 rounded-[20px] mt-10 lg:mt-0">
+            {/* <button className="block md:inline-block  text-white font-medium font-inter bg-yellow py-2 px-8 rounded-[20px] mt-10 lg:mt-0">
               view all properties
-            </button>
+            </button> */}
       </div>
       <div className=" lg:flex items-center  gap-10">
         {propertiesData.map(({ id, location, profit, title, detials }) => (
@@ -35,15 +35,12 @@ const FeaturedProperties = ({ progress }) => {
             </div>
             <div className="w-[90%] h-2 rounded-full bg-[#296B8299] mx-5">
               <div
-                className="h-full rounded-full bg-white transition-all duration-300  w-[50%] mt-4 "
-              />
+                className="h-full rounded-full bg-white transition-all duration-300  w-[50%] mt-4 "/>
             </div>
             <div className=" text-center mx-auto pb-8">
-              <Link to="/marketplace">
                 <button className=" text-yellow  font-medium font-inter py-2 px-6 rounded-[20px] mt-10 ml-6  border hover:bg-tertiary  border-yellow">
                   {detials}
                 </button>
-              </Link>
             </div>
           </div>
         ))}

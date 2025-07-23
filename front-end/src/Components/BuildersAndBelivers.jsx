@@ -13,7 +13,7 @@ const BuildersAndBelivers = ({title, description}) => {
         </p>
         <Link to="/marketPlace">
           <button className="text-white font-medium font-inter bg-yellow py-2 px-10 rounded-[20px] mt-20">
-            Join our newsletter
+            Join waitlist
           </button>
         </Link>
       </div>
