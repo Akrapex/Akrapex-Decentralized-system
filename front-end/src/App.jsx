@@ -7,7 +7,7 @@ import CommunityHub from "./Pages/CommunityHub";
 
 const App = () => {
   return (
-    <>
+    <div className="overflow-hidden">
       <NavBar />
       <Routes>
         <Route path="/">
@@ -17,7 +17,7 @@ const App = () => {
         </Route>
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 };
 
