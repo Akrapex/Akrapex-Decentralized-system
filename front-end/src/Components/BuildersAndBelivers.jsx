@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 
 const BuildersAndBelivers = ({title, description}) => {
@@ -11,9 +12,9 @@ const BuildersAndBelivers = ({title, description}) => {
         <p className="font-normal font-inter text-primary w-full pt-7">
           {description}
         </p>
-        <Link to="/marketPlace">
+        <Link to="https://tally.so/r/mVOPVa">
           <button className="text-white font-medium font-inter bg-yellow py-2 px-10 rounded-[20px] mt-20">
-            Join waitlist
+            Join waitlist <IoIosArrowRoundForward className="inline-block h-[inherit] bg-white text-black rounded-full p-1 w-auto"/>
           </button>
         </Link>
       </div>
