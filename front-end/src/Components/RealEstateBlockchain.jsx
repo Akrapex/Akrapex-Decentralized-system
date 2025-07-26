@@ -19,7 +19,7 @@ const RealEstateBlockchain = () => {
             co-own, and manage real estate smarter.
           </p>
           <Link to="https://tally.so/r/mVOPVa">
-            <button className="block md:inline-block  text-white font-medium font-inter bg-yellow py-2 px-8 rounded-[20px] mt-10">
+            <button className="block md:inline-block  text-white font-medium font-inter bg-yellow py-2 px-5 rounded-[20px] mt-10">
               Join waitlist <IoIosArrowRoundForward className="inline-block h-[inherit] bg-white text-black rounded-full p-1 w-auto"/>
             </button>
           </Link>
