@@ -21,9 +21,11 @@ const RealEstateBlockchain = () => {
               Browse properties
             </button>
           </Link>
-          <button className="text-2xl text-yellow font-medium font-inter py-2 px-9 rounded-[20px] mt-10 ml-6  border hover:bg-tertiary  border-yellow">
-            Learn how it works
-          </button>
+          <Link to="/firstbridge">
+            <button className="text-2xl text-yellow font-medium font-inter py-2 px-9 rounded-[20px] mt-10 ml-6  border hover:bg-tertiary  border-yellow">
+              Learn how it works
+            </button>
+          </Link>
         </div>
         <div className="">
           <img

@@ -7,8 +7,8 @@ const NavBar = () => {
         <div className="text-2xl font-medium font-inter flex  gap-12">
           <NavLink to="/">Home</NavLink>
           <NavLink to="#">About</NavLink>
-          <NavLink to="#">Properties</NavLink>
-          <NavLink to="#">How it works</NavLink>
+          <NavLink to="/marketplace">Properties</NavLink>
+          <NavLink to="/firstbridge">How it works</NavLink>
         </div>
         <Link to="/">
           <button className="text-xl text-[#27516C] font-medium font-inter bg-[#E5BD3E] py-2 px-10 rounded-[20px] ">
