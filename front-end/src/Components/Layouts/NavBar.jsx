@@ -6,7 +6,7 @@ const NavBar = () => {
         <h1 className="text-[2rem] font-medium font-inter">Logo</h1>
         <div className="text-2xl font-medium font-inter flex  gap-12">
           <NavLink to="/">Home</NavLink>
-          <NavLink to="#">About</NavLink>
+          <NavLink to="/availablecourses">Features</NavLink>
           <NavLink to="/marketplace">Properties</NavLink>
           <NavLink to="/firstbridge">How it works</NavLink>
         </div>
