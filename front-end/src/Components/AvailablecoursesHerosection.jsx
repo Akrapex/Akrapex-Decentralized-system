@@ -25,12 +25,25 @@ const AvailablecoursesHerosection = () => {
             />
           </div>
         </div>
-        <div className='text-xl font-medium font-Grotesk'>
-          <button className='bg-primary text-white px-4 py-2 rounded-{20px}'>All Courses</button>
-          <button>Property Investment</button>
-          <button>Property Management</button>
-          <button>Market Analysis</button>
-          <button>Market Analysis</button>
+        <div className="text-xl font-medium font-Grotesk flex items-center justify-between pt-20">
+          <button className="bg-primary text-white px-8  py-3 rounded-[20px]">
+            All Courses
+          </button>
+          <button className="border border-gray-300 px-6 py-3 rounded-[20px] text-secondary">
+            Property Investment
+          </button>
+          <button className="border border-gray-300 px-6 py-3 rounded-[20px] text-secondary">
+            Property Management
+          </button>
+          <button
+            className="border border-gray-300 px-6 py-3 rounded-[20px]
+            text-secondary"
+          >
+            Market Analysis
+          </button>
+          <button className="border border-gray-300 px-6 py-3 rounded-[20px] text-secondary">
+            Market Analysis
+          </button>
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ import { availableCoursesData } from '../Constants/availableCoursesData';
 
 const AvailableCourseMainSection = () => {
   return (
-    <div className="max-w-[1440px] w-full mx-auto mb-40">
+    <div className="max-w-[1440px] w-full mx-auto">
       <div className="flex justify-between items-center">
         <h2 className="text-[4rem] font-bold text-secondary font-Grotesk">
           Available Courses
@@ -12,7 +12,7 @@ const AvailableCourseMainSection = () => {
           View all Courses
         </button>
       </div>
-      <div className="grid grid-cols-2 gap-6 my-10">
+      <div className="grid grid-cols-2 gap-6 my-10 gap-y-10">
         {availableCoursesData.map(
           ({ id, image, title, name, time, modules, book }) => (
             <div key={id}>
@@ -29,8 +29,8 @@ const AvailableCourseMainSection = () => {
                     <p>{modules}</p>
                   </div>
                 </div>
-                <div className="m-auto text-center">
-                  <button className="text-white bg-primary py-2 px-10 w-[525px] rounded-[20px]">
+                <div className="m-auto text-center py-5">
+                  <button className="text-white bg-primary py-3 px-10 w-[525px] rounded-[20px]">
                     Start Learning
                   </button>
                 </div>

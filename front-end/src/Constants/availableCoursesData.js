@@ -32,3 +32,4 @@ export const availableCoursesData = [
     book: "/Images/tabler_book.svg",
   },
 ];
+
