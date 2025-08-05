@@ -4,13 +4,14 @@ import ReadyToStart from '../Components/ReadyToStart'
 import ListYourProperty from '../Components/ListYourProperty'
 import AvailablecoursesHerosection from '../Components/AvailablecoursesHerosection'
 import LatestFromOurBlog from '../Components/LatestFromOurBlog'
+import ReadyMasterRealEstate from '../Components/ReadyMasterRealEstate'
 
 const AvailableCourses = () => {
   return (
     <div>
       <AvailablecoursesHerosection/>
       <AvailableCourseMainSection/>
-      <ListYourProperty/>
+      <ReadyMasterRealEstate/>
       <LatestFromOurBlog/>
     </div>
   )

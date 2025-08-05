@@ -8,8 +8,8 @@ import FirstBridge from "./Pages/FirstBridge";
 import SecondBridge from "./Pages/SecondBridge";
 import ThirdBridge from "./Pages/ThirdBridge";
 import StakeholdersPage from "./Pages/StakeholdersPage";
-import ServiceProffesion from "./Pages/ServiceProffesion";
 import AvailableCourses from "./Pages/AvailableCourses";
+import ServiceProfessional from "./Pages/ServiceProfessional";
 
 const App = () => {
   return (
@@ -24,7 +24,7 @@ const App = () => {
           <Route path="/marketplace" element={<MarketPlace />} />
           <Route path="/communityhub" element={<CommunityHub />} />
           <Route path="/stakeholderspage" element={<StakeholdersPage />} />
-          <Route path="/serviceprofession" element={<ServiceProffesion />} />
+          <Route path="/serviceprofessional" element={<ServiceProfessional />} />
           <Route path="/availablecourses" element={<AvailableCourses />} />
         </Route>
       </Routes>
