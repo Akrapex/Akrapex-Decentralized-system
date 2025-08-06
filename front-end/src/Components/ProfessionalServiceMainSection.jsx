@@ -6,13 +6,15 @@ const ProfessionalServiceMainSection = () => {
     <div className="max-w-[1440px] w-full mx-auto pb-40">
       <div className="">
         <h2 className="text-[4rem] font-bold text-secondary font-Grotesk">
-          Available Courses
+          Services Professionals
         </h2>
         <div className="flex justify-between items-center">
           <p className="text-2xl font-normal font-inter text-secondary">
             All verified and rated by the community
           </p>
-          <button className="text-xl font-medium py-2 px-8 border border-gray-300 rounded-[20px] ">Sort by: Rating</button>
+          <button className="text-xl font-medium py-2 px-8 border border-gray-300 rounded-[20px] ">
+            Sort by: Rating
+          </button>
         </div>
       </div>
       <div className="grid grid-cols-2 py-10 gap-10">
