@@ -21,11 +21,11 @@ const App = () => {
           <Route path="/firstbridge" element={<FirstBridge />} />
           <Route path="/secondbridge" element={<SecondBridge />} />
           <Route path="/thirdbridge" element={<ThirdBridge />} />
-          <Route path="/marketplace" element={<MarketPlace />} />
-          <Route path="/communityhub" element={<CommunityHub />} />
           <Route path="/stakeholderspage" element={<StakeholdersPage />} />
           <Route path="/serviceprofessional" element={<ServiceProfessional />} />
           <Route path="/availablecourses" element={<AvailableCourses />} />
+          <Route path="/marketplace" element={<MarketPlace />} />
+          <Route path="/communityhub" element={<CommunityHub />} />
         </Route>
       </Routes>
       <Footer />

@@ -1,7 +1,20 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
+
+
 const NavBar = () => {
+  const location = useLocation();
+
+  // pages that has a diffrent navbar colour
+  const specialPages = ["/", "/marketplace"];
+
+  // check if current path is one omf them
+  const isSpecialPage = specialPages.includes(location.pathname);
   return (
-    <nav className=" bg-primary text-white">
+    <nav
+      className={`${
+        isSpecialPage ? "bg-primary text-white" : "bg-white text-black"
+      }`}
+    >
       <div className="flex justify-between items-center w-full max-w-[1440px] mx-auto pt-8">
         <h1 className="text-[2rem] font-medium font-inter">Logo</h1>
         <div className="text-2xl font-medium font-inter flex  gap-12">
