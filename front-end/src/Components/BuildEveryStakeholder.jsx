@@ -56,26 +56,28 @@
 
 const BuildEveryStakeholder = () => {
   return (
-    <div className="p-6 space-y-10">
+    <div className="p-10  space-y-10">
       {stakeholderData.map((item, index) => (
         <div
           key={index}
-          className="bg-white border border-[#E0E0E0] shadow-md rounded-xl p-6 space-y-6"
+          className="bg-[#FBFCFF] border border-[#E0E0E0] shadow-md rounded-xl py-16 px-14 space-y-6"
         >
           {/* Top Section: Info + Quick Onboarding side by side */}
-          <div className="flex flex-col lg:flex-row justify-between gap-6">
+          <div className="flex flex-col lg:flex-row justify-between gap-6 mb-20">
             {/* Left: Image + Details */}
             <div className="flex-1">
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-10 h-10 mb-3"
+                className=" mb-3 ml-10 bg-[#254F6A66] p-3 rounded-[15px]"
               />
-              <h3 className="text-[1.5rem] font-semibold text-[#254F6A]">
+              <h3 className="font-semibold text-[1.625rem] text-primary">
                 {item.title}
               </h3>
-              <p className="text-sm text-[#666] w-[571px] mt-1">{item.description}</p>
-              <ul className="list-disc ml-5 mt-3 text-sm text-[#444] space-y-1">
+              <p className="w-[571px] text-xl font-normal text-[#00000099] py-4">
+                {item.description}
+              </p>
+              <ul className="list-disc ml-5 mt-3 text-lg font-inter font-normal space-y-1 text-[#000000B2]">
                 {item.list.map((point, i) => (
                   <li key={i}>{point}</li>
                 ))}
@@ -83,7 +85,7 @@ const BuildEveryStakeholder = () => {
             </div>
 
             {/* Right: Quick Onboarding */}
-            <div className="bg-[#F9FBFC] border border-[#D0D7DC] rounded-lg p-5 w-full lg:max-w-sm">
+            <div className="shadow-xl border border-gray-300 rounded-lg pt-20 px-8 w-[430px]">
               <h4 className="text-lg font-semibold text-[#254F6A]">
                 Quick Onboarding
               </h4>
@@ -91,7 +93,7 @@ const BuildEveryStakeholder = () => {
                 {step.map((text, i) => (
                   <li
                     key={i}
-                    className="flex items-start space-x-3 text-sm text-[#333]"
+                    className="flex items-start space-x-3 text-base text-[secondary] font-medium"
                   >
                     <span className="flex items-center justify-center w-6 h-6 bg-[#254F6A] text-white rounded-full text-xs font-semibold">
                       {i + 1}
@@ -104,19 +106,19 @@ const BuildEveryStakeholder = () => {
           </div>
 
           {/* Message Section */}
-          <div className="flex items-start gap-3 bg-[#F4F6F8] rounded-lg p-4">
+          <div className="flex items-center gap-3 shadow-xl border border-gray-300 rounded-[20px] p-4">
             {item.chatbox && (
               <img
                 src={item.chatbox}
                 alt="chat icon"
-                className="w-5 h-5 mt-1"
+                className="w-[100px] mt-1"
               />
             )}
-            <p className="italic text-sm text-[#333]">"{item.message}"</p>
+            <p className="italic text-xl text-primary">"{item.message}"</p>
           </div>
 
           {/* CTA Button */}
-          <button className="w-[1264px] bg-[#254F6A] hover:bg-[#1e3e52] text-white py-2 rounded-[20px] font-semibold text-sm">
+          <button className="w-[1264px] bg-[#254F6A] hover:bg-[#1e3e52] text-white py-4 rounded-[20px] font-semibold text-sm">
             Get Started as a {item.title.split(" ")[1] || item.title}
           </button>
         </div>

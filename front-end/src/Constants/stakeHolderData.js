@@ -10,6 +10,7 @@ export const stakeholderData = [
       "Developer Credit Facilities",
       "Inventory Management",
     ],
+    chatbox: "/Images/chatbot.svg",
     message:
       "Akrapex helped us secure $2.3M in funding and find perfect partners for our downtown project in just 3 weeks.",
   },
@@ -24,6 +25,7 @@ export const stakeholderData = [
       "Company Profiles",
       "Automated Commissions",
     ],
+    chatbox: "/Images/chatbot.svg",
     message:
       "The AI recommendations have transformed my business. I'm closing 40% more deals with less effort.",
   },
@@ -34,10 +36,11 @@ export const stakeholderData = [
       "Join our verified network, build reputation, and connect with high-quality projects and clients.",
     list: [
       "Service Directory",
-    "Reputation System",
-    "Secure Escrow Payments",
-    "Project Notification Feed",
+      "Reputation System",
+      "Secure Escrow Payments",
+      "Project Notification Feed",
     ],
+    chatbox: "/Images/chatbot.svg",
     message:
       "Since joining Akrapex, my bookings have doubled and I never worry about payment delays.",
   },
@@ -48,10 +51,11 @@ export const stakeholderData = [
       "Discover properties with AI recommendations, virtual tours, and seamless transaction processes.",
     list: [
       "Smart property recommendations",
-    "Virtual tours and scheduling",
-    "BNPL financing options",
-    "Utility management tools",
+      "Virtual tours and scheduling",
+      "BNPL financing options",
+      "Utility management tools",
     ],
+    chatbox: "/Images/chatbot.svg",
     message:
       "Akrapex helped us secure $2.3M in funding and find perfect partners for our downtown project in just 3 weeks.",
   },
@@ -62,9 +66,9 @@ export const stakeholderData = [
       "Access fractional ownership, intelligent dashboards, and diversified portfolios with blockchain transparency.",
     list: [
       "Fractional Investments",
-    "Investor Intelligence Engine",
-    "Yield Accounts",
-    "Blockchain Ownership Registry",
+      "Investor Intelligence Engine",
+      "Yield Accounts",
+      "Blockchain Ownership Registry",
     ],
     chatbox: "/Images/chatbot.svg",
     message:
@@ -76,3 +80,25 @@ export const step =["Create your developer profile",
 "Upload project portfolio",
 "Set up payment and escrow accounts",
 "Connect with investors and collaborators"]
+
+
+export const succesStories = [
+  {
+    title: "Developer Succes",
+    story:
+      '"Raised $2M in 3 weeks through Akrapex funding. Game-changing platform"',
+    name: "Samuel Ebek, Ebeks & co Development",
+  },
+  {
+    title: "Agent Success",
+    story:
+      '"My client satisfaction rate increased to 98% using Akrapex tools and reputation system."',
+      name: "Samuel Ebek, Ebeks & co Development"
+  },
+  {
+    title: "Artisan Success",
+    story:
+      '"Connected with premium projects and doubled my income through Akrapex network."',
+    name: "Samuel Ebek, Ebeks & co Development",
+  },
+];
