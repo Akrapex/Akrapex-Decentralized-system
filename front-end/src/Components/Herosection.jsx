@@ -3,7 +3,7 @@ import React from 'react'
 const Herosection = () => {
   return (
     <section className=" bg-primary py-10">
-      <div className="max-w-[1440px] mx-auto">
+      <div className="w-full mx-auto">
         <div className="text-center pt-10">
           <h1 className="text-[4.625rem] font-bold font-Grotesk text-white">
             Find Your Perfect Property

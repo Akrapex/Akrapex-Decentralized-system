@@ -13,7 +13,7 @@ import ServiceProfessional from "./Pages/ServiceProfessional";
 
 const App = () => {
   return (
-    <>
+    <div className="overflow-hidden">
       <NavBar />
       <Routes>
         <Route path="/">
@@ -29,7 +29,7 @@ const App = () => {
         </Route>
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 };
 
