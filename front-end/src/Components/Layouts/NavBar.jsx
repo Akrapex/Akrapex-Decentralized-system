@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink,useLocation } from "react-router-dom";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 const NavBar = () => {
