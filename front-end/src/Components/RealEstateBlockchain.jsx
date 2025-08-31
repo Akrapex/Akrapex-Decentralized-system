@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { IoIosArrowRoundForward } from "react-icons/io";
-
+import { motion } from "motion/react";
 
 const RealEstateBlockchain = () => {
   return (
@@ -18,11 +18,7 @@ const RealEstateBlockchain = () => {
             developers to tenants, into one powerful ecosystem. Search, invest,
             co-own, and manage real estate smarter.
           </p>
-          <Link to="https://tally.so/r/mVOPVa">
-            <button className="block md:inline-block  text-white font-medium font-inter bg-yellow py-2 px-5 rounded-[20px] mt-10">
-              Join waitlist <IoIosArrowRoundForward className="inline-block h-[inherit] bg-white text-black rounded-full p-1 w-auto"/>
-            </button>
-          </Link>
+          
           {/* <button className="block md:inline-block  text-yellow font-medium font-inter py-2 px-9 rounded-[20px] mt-10 md:ml-6  border hover:bg-tertiary  border-yellow">
             Learn how it works
           </button> */}
@@ -32,7 +28,7 @@ const RealEstateBlockchain = () => {
             src="/Images/house1.svg"
             alt="house1"
             className="lg:absolute bottom-[40%] w-[80%] lg:w-[400px]"
-          /> 
+          />
           <img
             src="/Images/house2.svg"
             alt="house2"

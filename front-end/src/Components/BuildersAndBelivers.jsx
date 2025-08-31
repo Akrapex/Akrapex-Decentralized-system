@@ -6,7 +6,7 @@ const BuildersAndBelivers = ({title, description}) => {
   return (
     <div className="w-full mx-auto md:flex items-start justify-between py-28">
       <div className="py-40 lg:w-8/12 p-5">
-        <p className="text-primary text-3xl lg:text-5xl font-medium font-Grotesk leading-none">
+        <p className="text-primary text-3xl lg:text-5xl font-bold font-Groteskk font-inter leading-none">
           {title}
         </p>
         <p className="font-normal font-inter text-primary w-full pt-7">
@@ -19,7 +19,7 @@ const BuildersAndBelivers = ({title, description}) => {
         </Link>
       </div>
       <div className="">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10 p-5">
+        <div className="lg:grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10 p-5">
           <div className="bg-[#254F6A33] lg:w-11/12 h-[374px]  py-20 px-5 rounded-[10px]">
             <img
               src="/Images/accessOwership.svg"
@@ -48,7 +48,7 @@ const BuildersAndBelivers = ({title, description}) => {
               core
             </p>
           </div>
-          <div className="bg-[#254F6A33] lg:w-11/12 h-[374px]  py-20 px-5 rounded-[10px]">
+          <div className="bg-[#254F6A33] lg:w-11/12 h-[374px]  py-20 px-5 rounded-[10px] mt-10">
             <img
               src="/Images/noBanks.svg"
               alt="access-ownership"

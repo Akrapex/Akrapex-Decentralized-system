@@ -1,5 +1,6 @@
-import { Link, NavLink,useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import logo from "/Images/footer-logo.png";
 
 const NavBar = () => {
   const location = useLocation();
@@ -12,7 +13,14 @@ const NavBar = () => {
   return (
     <nav className=" bg-primary text-white w=full shadow-md flex items-center py-5 fixed top-0 w-full z-10">
       <div className="flex justify-around items-center w-full mx-auto ">
-        <h1 className=" font-medium font-inter">Logo</h1>
+        <h1 className=" font-medium font-inter">
+          <img
+            src={logo}
+            alt="Akrapex logo"
+            className="w-[50px] inline-block"
+          />
+          <span className="md:inline-block mx-3 hidden ">Akrapex realestates</span>
+        </h1>
         <div className=" font-medium font-inter md:flex  gap-12 hidden ">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/availablecourses">Features</NavLink>
@@ -21,7 +29,8 @@ const NavBar = () => {
         </div>
         <Link to="https://tally.so/r/mVOPVa">
           <button className=" text-white font-medium font-inter bg-[#E5BD3E] py-2 px-5 rounded-[20px] ">
-            Join waitlist <IoIosArrowRoundForward className="inline-block h-[inherit] bg-white text-black rounded-full p-1 w-auto"/>
+            Join waitlist{" "}
+            <IoIosArrowRoundForward className="inline-block h-[inherit] bg-white text-black rounded-full p-1 w-auto" />
           </button>
         </Link>
       </div>
