@@ -10,10 +10,11 @@ import ThirdBridge from "./Pages/ThirdBridge";
 import StakeholdersPage from "./Pages/StakeholdersPage";
 import AvailableCourses from "./Pages/AvailableCourses";
 import ServiceProfessional from "./Pages/ServiceProfessional";
+import Index from "./marketplace/index";
 
 const App = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="">
       <NavBar />
       <Routes>
         <Route path="/">
@@ -22,10 +23,16 @@ const App = () => {
           <Route path="/secondbridge" element={<SecondBridge />} />
           <Route path="/thirdbridge" element={<ThirdBridge />} />
           <Route path="/stakeholderspage" element={<StakeholdersPage />} />
-          <Route path="/serviceprofessional" element={<ServiceProfessional />} />
+          <Route
+            path="/serviceprofessional"
+            element={<ServiceProfessional />}
+          />
           <Route path="/availablecourses" element={<AvailableCourses />} />
-          {/* <Route path="/marketplace" element={<MarketPlace />} /> */}
+          {/* <Route path="/marketplace" element={<MarketPlace />} /> 09034100644 */}
           <Route path="/communityhub" element={<CommunityHub />} />
+        </Route>
+        <Route path="/properties">
+          <Route index element={<Index />} />
         </Route>
       </Routes>
       <Footer />

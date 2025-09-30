@@ -1,6 +1,6 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import logo from "/Images/footer-logo.png";
+import logo from "/Images/footer-logo-nobg.png";
 
 const NavBar = () => {
   const location = useLocation();
@@ -11,13 +11,13 @@ const NavBar = () => {
   // check if current path is one omf them
   const isSpecialPage = specialPages.includes(location.pathname);
   return (
-    <nav className=" bg-primary text-white w=full shadow-md flex items-center py-5 fixed top-0 w-full z-10">
+    <nav className=" bg-primary text-white w=full shadow-md flex items-center py-5 sticky top-0 left-0 w-full z-10">
       <div className="flex justify-around items-center w-full mx-auto ">
         <h1 className=" font-medium font-inter">
           <img
             src={logo}
             alt="Akrapex logo"
-            className="w-[50px] inline-block"
+            className="w-[80px] inline-block"
           />
           <span className="md:inline-block mx-3 hidden ">Akrapex realestates</span>
         </h1>
