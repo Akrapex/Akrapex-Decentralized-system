@@ -4,6 +4,8 @@ import Footer from "./Components/Footer";
 import NavBar from "./Components/Layouts/NavBar";
 import MarketPlace from "./Pages/MarketPlace";
 import CommunityHub from "./Pages/CommunityHub";
+import DontJustInvest from "./Components/DontJustInvest";
+import ReadyToStart from "./Components/ReadyToStart";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
           <Route path="/communityhub" element={<CommunityHub/>}/>
         </Route>
       </Routes>
+      <DontJustInvest />
+      <ReadyToStart />
       <Footer />
     </div>
   );
