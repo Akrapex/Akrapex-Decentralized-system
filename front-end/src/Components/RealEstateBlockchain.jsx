@@ -17,7 +17,6 @@ const RealEstateBlockchain = () => {
   
   let handleSearch = () => { 
     navigate(`/properties?search=${searchTerm}`);
-    console.log("searching for:",searchTerm);
   }
 
   return (
