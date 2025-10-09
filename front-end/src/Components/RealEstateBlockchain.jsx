@@ -21,7 +21,7 @@ const RealEstateBlockchain = () => {
   }
 
   return (
-    <div className="my-40 w-full">
+    <div className="md:my-40 w-full">
       <h2 className="text-[#00C2FF] text-xs lg:text-lg capitalize  font-medium rounded-full py-2 px-4 w-[fit-content] bg-[#00C2FF33] ml-5 mb-7">
         Revolutionizing Real Estate With blockchain
       </h2>
