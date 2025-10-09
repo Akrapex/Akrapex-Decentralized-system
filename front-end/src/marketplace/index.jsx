@@ -3,6 +3,7 @@ import PropertyCard from "./PropertyCard";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
+import { VscError } from "react-icons/vsc";
 
 const Index = () => {
   let [isLoading, setIsLoading] = useState(true);
@@ -15,7 +16,7 @@ const Index = () => {
       try {
         if (location.search) {
           let { data } = await axios.get(
-            `http://localhost:5050/api/v1/properties/search${location.search}`
+            `http://localhost:5050/api/v1/properties/search?q=${location.search}`
           );
           console.log(data);
           setIsLoading(false);
@@ -41,8 +42,9 @@ const Index = () => {
   if (isLoading) {
     return (
       <>
-        <div className="h-96 font-bold text-center flex justify-center items-center">
-          <p>fetching properties ...</p>
+        <div className="h-96 font-bold text-center flex flex-col justify-center items-center">
+          <div className="loader ease-linear rounded-full border-8 border-t-8 border-t-gray-400 animate-spin border-gray-200 h-32 w-32"></div>
+          <p>Loading...</p>
         </div>
       </>
     );
@@ -52,7 +54,8 @@ const Index = () => {
     return (
       <>
         <div className="h-96 font-bold text-center flex justify-center items-center">
-          <p>No property found</p>
+          <VscError className="w-16 h-16 text-red-600" />
+          <p>Something went wrong</p>
         </div>
       </>
     );
