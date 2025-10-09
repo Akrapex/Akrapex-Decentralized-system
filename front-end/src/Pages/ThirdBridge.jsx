@@ -1,5 +1,5 @@
 
-import ThirdBridgeSection from '../Components/THirdBridgeSEction'
+import ThirdBridgeSection from '../Components/ThirdBridgeSEction'
 import EnhancingYourExperience from '../Components/EnhancingYourExperience'
 
 const ThirdBridge = () => {
