@@ -8,10 +8,9 @@ const Index = () => {
   let [properties, setProperties] = useState([]);
 
   useEffect(() => {
-    
     async function fetchProperties() {
       try {
-        let {data} = await axios.get(
+        let { data } = await axios.get(
           "http://localhost:5050/api/v1/properties/search"
         );
         console.log(data);
@@ -19,10 +18,11 @@ const Index = () => {
         setProperties(data);
         return data.data;
       } catch (error) {
+
         console.log(error);
       }
     }
-    fetchProperties()
+    fetchProperties();
   }, []);
 
   if (isLoading) {
@@ -30,11 +30,21 @@ const Index = () => {
       <>
         <div className="h-96 font-bold text-center flex justify-center items-center">
           <p>fetching properties ...</p>
-      </div>
+        </div>
       </>
     );
   }
-  console.log(properties.pages)
+
+
+  if (properties.length < 1) { 
+    return (
+      <>
+        <div className="h-96 font-bold text-center flex justify-center items-center">
+          <p>No property found</p>
+        </div>
+      </>
+    );
+  }
 
   return (
     <>
@@ -52,13 +62,9 @@ const Index = () => {
             </div>
             {properties.data.map((property) => {
               return (
-                <PropertyCard
-                  title={property.title}
-                  price={property.price}
-                />
+                <PropertyCard title={property.title} price={property.price} />
               );
             })}
-            
           </div>
           {}
         </div>
