@@ -7,6 +7,7 @@ import cookieParser from "cookie-parser";
 import authentication from "./routes/auth.js"
 import pool from "./config/dbConfig.js"
 import properties from "./routes/properties.js"
+import bcrypt from "bcrypt"
 
 dotenv.config();
 
@@ -26,7 +27,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 app.use("/api/v1/auth", authentication);
-app.use("/api/v1/auth", properties);
+app.use("/api/v1/", properties);
 
 let port = 5050;
 

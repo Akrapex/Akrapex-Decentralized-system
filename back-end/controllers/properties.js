@@ -12,11 +12,13 @@ let properties = async (req, res) => {
       "SELECT * FROM properties LIMIT 20 OFFSET $1",
       [offset]
     );
-    let totalpages = totalmatch.rows[0].count / 20;
+    let totalpages = Math.ceil(totalmatch.rows[0].count / 20);
+     console.log(totalmatch.rows[0].count);
     res.json({
       success: true,
       data: properties.rows,
       pages: totalpages,
+      result: totalmatch.rows[0].count
     });
     return;
   }
@@ -28,12 +30,17 @@ let properties = async (req, res) => {
     "SELECT * FROM properties WHERE description ILIKE $1 OR title ILIKE $1 LIMIT 20 OFFSET $2",
     [`%${q}%`, offset]
   );
-  let totalpages = totalmatch.rows[0].count / 20;
+  let totalpages = Math.ceil(totalmatch.rows[0].count / 20);
   console.log(totalmatch.rows[0].count);
   console.log(q, page);
   console.log(offset);
 
-  res.json({ success: true, data: result.rows, pages: totalpages });
+  res.json({
+    success: true,
+    data: properties.rows,
+    pages: totalpages,
+    result: totalmatch.rows[0].count,
+  });
 };
 
 export default properties;

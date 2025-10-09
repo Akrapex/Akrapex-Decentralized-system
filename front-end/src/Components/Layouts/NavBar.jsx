@@ -11,20 +11,20 @@ const NavBar = () => {
   // check if current path is one omf them
   const isSpecialPage = specialPages.includes(location.pathname);
   return (
-    <nav className=" bg-primary text-white w=full shadow-md flex items-center py-5 sticky top-0 left-0 w-full z-10">
+    <nav className=" bg-primary text-white w=full shadow-md flex items-center  lg:py-5 sticky top-0 left-0 w-full z-10">
       <div className="flex justify-around items-center w-full mx-auto ">
-        <h1 className=" font-medium font-inter">
+        <h1 className=" font-medium font-inter text-xl md:text-2xl">
           <img
             src={logo}
             alt="Akrapex logo"
             className="w-[80px] inline-block"
           />
-          <span className="md:inline-block mx-3 hidden ">Akrapex realestates</span>
+          <span className="md:inline-block mx-3 hidden ">Akrapex</span>
         </h1>
         <div className=" font-medium font-inter md:flex  gap-12 hidden ">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/availablecourses">Features</NavLink>
-          <NavLink to="/marketplace">Properties</NavLink>
+          <NavLink to="/properties">Properties</NavLink>
           <NavLink to="/firstbridge">How it works</NavLink>
         </div>
         <Link to="https://tally.so/r/mVOPVa">

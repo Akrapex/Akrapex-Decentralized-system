@@ -8,12 +8,19 @@ const Index = () => {
   let [properties, setProperties] = useState([]);
 
   useEffect(() => {
+    
     async function fetchProperties() {
-      let data = await axios.get("http://localhost:5050/properties");
-      console.log(Array.isArray(data.data))
-      setIsLoading(false);
-      setProperties(data.data);
-      return data.data;
+      try {
+        let {data} = await axios.get(
+          "http://localhost:5050/api/v1/properties/search"
+        );
+        console.log(data);
+        setIsLoading(false);
+        setProperties(data);
+        return data.data;
+      } catch (error) {
+        console.log(error);
+      }
     }
     fetchProperties()
   }, []);
@@ -21,10 +28,13 @@ const Index = () => {
   if (isLoading) {
     return (
       <>
-        <p>LOADING PROPETY..</p>
+        <div className="h-96 font-bold text-center flex justify-center items-center">
+          <p>fetching properties ...</p>
+      </div>
       </>
     );
   }
+  console.log(properties.pages)
 
   return (
     <>
@@ -32,24 +42,25 @@ const Index = () => {
         <div className="w-full bg-white py-1 mb-5">
           <Navbar />
         </div>
-        <div className="bg-white ">
-          <div className="flex justify-center flex-wrap py-10">
+        <div className="bg-white px-[30px] mx-auto">
+          <div className="flex justify-between flex-wrap py-10">
             <div className="py-5 shrink-0 grow-0 w-10/12">
               <h2 className="text-2xl font-semibold ">
                 Real Estate Properties for Sale
               </h2>
-              <p>{properties.length} results found</p>
+              <p>{properties.result} results found</p>
             </div>
-            {properties.map((property) => {
+            {properties.data.map((property) => {
               return (
                 <PropertyCard
                   title={property.title}
                   price={property.price}
-                  image={property.assets[0]}
                 />
               );
             })}
+            
           </div>
+          {}
         </div>
       </div>
     </>
