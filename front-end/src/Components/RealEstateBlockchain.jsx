@@ -1,8 +1,25 @@
 import { Link } from "react-router-dom";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { motion } from "motion/react";
+import { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 const RealEstateBlockchain = () => {
+  let [searchTerm, setSearchTerm] = useState("");
+  let inputRef = useRef();
+  let navigate = useNavigate();
+
+  let handleSearchInput = () => { 
+    let term = inputRef.current.value;
+    setSearchTerm(term);
+    console.log("search term:",term);
+  }  
+  
+  let handleSearch = () => { 
+    navigate(`/properties?search=${searchTerm}`);
+    console.log("searching for:",searchTerm);
+  }
+
   return (
     <div className="my-40 w-full">
       <h2 className="text-[#00C2FF] text-xs lg:text-lg capitalize  font-medium rounded-full py-2 px-4 w-[fit-content] bg-[#00C2FF33] ml-5 mb-7">
@@ -23,12 +40,14 @@ const RealEstateBlockchain = () => {
               type="text"
               className="p-3 m-0 inline-block w-[80%] capitalize focus:outline-0 text-black"
               placeholder="Search location, address, country, state"
+              ref={inputRef}
+              onInput={handleSearchInput}
             />
-            <button className="inline-block text-white bg-[#E5BD3E] p-3 w-[20%] font-bold">
+            <button className="inline-block text-white bg-[#E5BD3E] p-3 w-[20%] font-bold" onClick={handleSearch}>
               Search
             </button>
           </div>
-         
+
           {/* <button className="block md:inline-block  text-yellow font-medium font-inter py-2 px-9 rounded-[20px] mt-10 md:ml-6  border hover:bg-tertiary  border-yellow">
             Learn how it works
           </button> */}

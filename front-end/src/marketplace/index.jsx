@@ -2,24 +2,37 @@ import Navbar from "./Navbar";
 import PropertyCard from "./PropertyCard";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { useLocation } from "react-router-dom";
 
 const Index = () => {
   let [isLoading, setIsLoading] = useState(true);
   let [properties, setProperties] = useState([]);
+  let location = useLocation();
+  console.log("location:", location);
 
   useEffect(() => {
     async function fetchProperties() {
       try {
-        let { data } = await axios.get(
-          "http://localhost:5050/api/v1/properties/search"
-        );
+        if (location.search) {
+          let { data } = await axios.get(
+            `http://localhost:5050/api/v1/properties/search${location.search}`
+          );
+          console.log(data);
+          setIsLoading(false);
+          setProperties(data);
+          return data.data;
+        } else {
+          let { data } = await axios.get(
+            "http://localhost:5050/api/v1/properties/search"
+          );
+        }
         console.log(data);
         setIsLoading(false);
         setProperties(data);
         return data.data;
       } catch (error) {
-
-        console.log(error);
+        setIsLoading(false);
+        console.log("something wrong happened :", error);
       }
     }
     fetchProperties();
@@ -35,8 +48,7 @@ const Index = () => {
     );
   }
 
-
-  if (properties.length < 1) { 
+  if (properties.length < 1) {
     return (
       <>
         <div className="h-96 font-bold text-center flex justify-center items-center">
