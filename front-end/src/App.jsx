@@ -11,6 +11,7 @@ import StakeholdersPage from "./Pages/StakeholdersPage";
 import AvailableCourses from "./Pages/AvailableCourses";
 import ServiceProfessional from "./Pages/ServiceProfessional";
 import Index from "./marketplace/index";
+import Property from "./marketplace/Property";
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
         </Route>
         <Route path="/properties">
           <Route index element={<Index />} />
+          <Route element={<Property />} path="/properties/search/:id" />
         </Route>
       </Routes>
       <Footer />

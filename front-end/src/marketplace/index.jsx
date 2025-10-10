@@ -9,14 +9,17 @@ const Index = () => {
   let [isLoading, setIsLoading] = useState(true);
   let [properties, setProperties] = useState([]);
   let location = useLocation();
-  console.log("location:", location);
+  console.log("location:", location.search);
+
+  let query = new URLSearchParams(location.search);
+  console.log("query:", query.get("search"));
 
   useEffect(() => {
     async function fetchProperties() {
       try {
-        if (location.search) {
+        if (location.search !== "") {
           let { data } = await axios.get(
-            `http://localhost:5050/api/v1/properties/search?q=${location.search}`
+            `http://localhost:5050/api/v1/properties/search?q=${query.get("search")}`
           );
           console.log(data);
           setIsLoading(false);
@@ -26,11 +29,11 @@ const Index = () => {
           let { data } = await axios.get(
             "http://localhost:5050/api/v1/properties/search"
           );
+          console.log(data);
+          setIsLoading(false);
+          setProperties(data);
+          return data.data;
         }
-        console.log(data);
-        setIsLoading(false);
-        setProperties(data);
-        return data.data;
       } catch (error) {
         setIsLoading(false);
         console.log("something wrong happened :", error);
@@ -53,22 +56,48 @@ const Index = () => {
   if (properties.length < 1) {
     return (
       <>
-        <div className="h-96 font-bold text-center flex justify-center items-center">
+        <div className="w-full bg-white py-1 mb-5">
+          <Navbar
+            properties={properties}
+            handleProperties={setProperties}
+            setIsLoading={setIsLoading}
+          />
+        </div>
+        <div className="h-96 font-bold text-center flex flex-col justify-center items-center">
           <VscError className="w-16 h-16 text-red-600" />
           <p>Something went wrong</p>
         </div>
       </>
     );
   }
+  if (properties.result < 1) {
+    return (
+      <>
+        <div className="w-full bg-white py-1 mb-5">
+          <Navbar
+            properties={properties}
+            handleProperties={setProperties}
+            setIsLoading={setIsLoading}
+          />
+        </div>
+        <div className="h-96 font-bold text-center flex flex-col justify-center items-center">
+          <VscError className="w-16 h-16 text-red-600" />
+          <p>No match found</p>
+        </div>
+      </>
+    );
+        
+  }
+  
 
   return (
     <>
       <div className="bg-[#296B820D] m-0 p-0">
         <div className="w-full bg-white py-1 mb-5">
-          <Navbar />
+          <Navbar properties={properties} handleProperties={setProperties} setIsLoading={setIsLoading}/>
         </div>
         <div className="bg-white px-[30px] mx-auto">
-          <div className="flex justify-between flex-wrap py-10">
+          <div className="flex md:justify-around lg:justify-start flex-wrap py-10">
             <div className="py-5 shrink-0 grow-0 w-10/12">
               <h2 className="text-2xl font-semibold ">
                 Real Estate Properties for Sale

@@ -5,13 +5,24 @@ import logo from "/Images/footer-logo-nobg.png";
 const NavBar = () => {
   const location = useLocation();
 
+
   // pages that has a diffrent navbar colour
-  const specialPages = ["/", "/marketplace"];
+  const specialPages = ["/properties"];
+  let backgroundcolor = "bg-primary";
+  let primaryColor = "text-white";
 
   // check if current path is one omf them
   const isSpecialPage = specialPages.includes(location.pathname);
+  console.log(isSpecialPage);
+  console.log(location.pathname);
+  if (isSpecialPage) {
+    backgroundcolor = "bg-white"
+    primaryColor = "text-gray-500"
+  }
+  
+  
   return (
-    <nav className=" bg-primary text-white w=full shadow-md flex items-center  lg:py-5 sticky top-0 left-0 w-full z-10">
+    <nav className={` ${backgroundcolor} ${primaryColor} w=full shadow-md flex items-center   sticky top-0 left-0 w-full z-10`}>
       <div className="flex justify-around items-center w-full mx-auto ">
         <h1 className=" font-medium font-inter text-xl md:text-2xl">
           <img
