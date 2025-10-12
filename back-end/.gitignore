@@ -7,11 +7,18 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies and builds
 /node_modules
 /dist
 /dist-ssr
-*.local
+
+# Environment files
 .env
+.env.*
+!.env.example
+
+# Local config
+*.local
 
 # Editor directories and files
 .vscode/*
@@ -23,3 +30,4 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+*.code-workspace
