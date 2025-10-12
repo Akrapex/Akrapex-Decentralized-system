@@ -19,7 +19,7 @@ const Index = () => {
   useEffect(() => {
     async function fetchProperties() {
       try {
-        if (import.meta.env.NODE_ENV !== "production") {
+        if (import.meta.env.VITE_NODE_ENV !== "production") {
           console.log("⚠️  Development mode: Using local API endpoint.");
           if (location.search !== "") {
             let { data } = await axios.get(
