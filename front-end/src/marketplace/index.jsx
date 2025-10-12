@@ -5,6 +5,7 @@ import axios from "axios";
 import { useLocation } from "react-router-dom";
 import { VscError } from "react-icons/vsc";
 
+
 const Index = () => {
   let [isLoading, setIsLoading] = useState(true);
   let [properties, setProperties] = useState([]);
@@ -17,22 +18,48 @@ const Index = () => {
   useEffect(() => {
     async function fetchProperties() {
       try {
-        if (location.search !== "") {
-          let { data } = await axios.get(
-            `http://localhost:5050/api/v1/properties/search?q=${query.get("search")}`
-          );
-          console.log(data);
-          setIsLoading(false);
-          setProperties(data);
-          return data.data;
+        if (import.meta.env.NODE_ENV !== "production") {
+          console.log("⚠️  Development mode: Using local API endpoint.");
+          if (location.search !== "") {
+            let { data } = await axios.get(
+              `http://localhost:5050/api/v1/properties/search?q=${query.get(
+                "search"
+              )}`
+            );
+            console.log(data);
+            setIsLoading(false);
+            setProperties(data);
+            return data.data;
+          } else {
+            let { data } = await axios.get(
+              "http://localhost:5050/api/v1/properties/search"
+            );
+            console.log(data);
+            setIsLoading(false);
+            setProperties(data);
+            return data.data;
+          }
         } else {
-          let { data } = await axios.get(
-            "http://localhost:5050/api/v1/properties/search"
-          );
-          console.log(data);
-          setIsLoading(false);
-          setProperties(data);
-          return data.data;
+          console.log("🔒 Production mode: Using production API endpoint.");
+          if (location.search !== "") {
+            let { data } = await axios.get(
+              `https://akrapex-decentralized-system.onrender.com/api/v1/properties/search?q=${query.get(
+                "search"
+              )}`
+            );
+            console.log(data);
+            setIsLoading(false);
+            setProperties(data);
+            return data.data;
+          } else {
+            let { data } = await axios.get(
+              "https://akrapex-decentralized-system.onrender.com/api/v1/properties/search"
+            );
+            console.log(data);
+            setIsLoading(false);
+            setProperties(data);
+            return data.data;
+          }
         }
       } catch (error) {
         setIsLoading(false);
@@ -86,15 +113,17 @@ const Index = () => {
         </div>
       </>
     );
-        
   }
-  
 
   return (
     <>
       <div className="bg-[#296B820D] m-0 p-0">
         <div className="w-full bg-white py-1 mb-5">
-          <Navbar properties={properties} handleProperties={setProperties} setIsLoading={setIsLoading}/>
+          <Navbar
+            properties={properties}
+            handleProperties={setProperties}
+            setIsLoading={setIsLoading}
+          />
         </div>
         <div className="bg-white px-[30px] mx-auto">
           <div className="flex md:justify-around lg:justify-start flex-wrap py-10">

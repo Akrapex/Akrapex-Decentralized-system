@@ -3,12 +3,11 @@ import dotenv from "dotenv";
 import fs from "fs";
 dotenv.config();
 
-
 // --- Database connection setup ---
 let pool;
 if (process.env.PROJECT_PHASE !== "production") {
   console.log("⚠️  Development mode: Using local database settings.");
-   pool = new pg.Pool({
+  pool = new pg.Pool({
     user: "postgres",
     host: "localhost",
     database: "Akrapex",
@@ -17,7 +16,7 @@ if (process.env.PROJECT_PHASE !== "production") {
   });
 } else {
   console.log("🔒 Production mode: Using production database settings.");
-   pool = new pg.Pool({
+  pool = new pg.Pool({
     connectionString: process.env.DB_URL,
     ssl: { rejectUnauthorized: false }, // important for cloud databases
   });
@@ -98,15 +97,15 @@ export const initializeDatabase = async () => {
       const johnId = result.rows[0].id;
       const sarahId = result.rows[1].id;
 
-        const sql = fs.readFileSync(
-          "./properties_inserts_restricted.sql",
-          "utf8"
-        );
+      const sql = fs.readFileSync(
+        "./properties_inserts_restricted.sql",
+        "utf8"
+      );
 
-        // Run all queries at once
+      // Run all queries at once
       await pool.query(sql);
       console.log("✅ Default properties inserted.");
-      
+
       console.log("✅ Default users inserted.");
     } else {
       console.log(
