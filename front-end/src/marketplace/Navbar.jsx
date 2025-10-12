@@ -24,11 +24,13 @@ const Navbar = ({ properties, handleProperties, setIsLoading }) => {
 
   let handleSearch = async () => {
     navigate(`/properties?search=${searchTerm}`);
-    setIsLoading(false);
+    setIsLoading(true);
     let { data } = await axios.get(
       `http://localhost:5050/api/v1/properties/search?q=${searchTerm}`
     );
+    setIsLoading(false)
     handleProperties(data);
+
     console.log(data);
   };
 
