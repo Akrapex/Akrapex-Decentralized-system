@@ -11,10 +11,11 @@ const Navbar = ({ properties, handleProperties, setIsLoading }) => {
   let _query = new URLSearchParams(location.search);
   let query = _query.get("search") || "";
   console.log("this is the log :", query);
+  let url = import.meta.env.VITE_API_BASE_URL || "http://localhost:5050";
 
   useEffect(() => {
     inputRef.current.value = query;
-  },[query]);
+  }, [query]);
 
   let handleSearchInput = () => {
     let term = inputRef.current.value;
@@ -26,9 +27,9 @@ const Navbar = ({ properties, handleProperties, setIsLoading }) => {
     navigate(`/properties?search=${searchTerm}`);
     setIsLoading(true);
     let { data } = await axios.get(
-      `http://localhost:5050/api/v1/properties/search?q=${searchTerm}`
+      `${url}/api/v1/properties/search?q=${searchTerm}`
     );
-    setIsLoading(false)
+    setIsLoading(false);
     handleProperties(data);
 
     console.log(data);

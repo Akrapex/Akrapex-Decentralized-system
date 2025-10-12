@@ -14,6 +14,7 @@ const Index = () => {
 
   let query = new URLSearchParams(location.search);
   console.log("query:", query.get("search"));
+  let url = import.meta.env.VITE_API_BASE_URL || "http://localhost:5050";
 
   useEffect(() => {
     async function fetchProperties() {
@@ -22,7 +23,7 @@ const Index = () => {
           console.log("⚠️  Development mode: Using local API endpoint.");
           if (location.search !== "") {
             let { data } = await axios.get(
-              `http://localhost:5050/api/v1/properties/search?q=${query.get(
+              `${url}/api/v1/properties/search?q=${query.get(
                 "search"
               )}`
             );
@@ -32,7 +33,7 @@ const Index = () => {
             return data.data;
           } else {
             let { data } = await axios.get(
-              "http://localhost:5050/api/v1/properties/search"
+              `${url}/api/v1/properties/search`
             );
             console.log(data);
             setIsLoading(false);
@@ -43,7 +44,7 @@ const Index = () => {
           console.log("🔒 Production mode: Using production API endpoint.");
           if (location.search !== "") {
             let { data } = await axios.get(
-              `https://akrapex-decentralized-system.onrender.com/api/v1/properties/search?q=${query.get(
+              `${url}/api/v1/properties/search?q=${query.get(
                 "search"
               )}`
             );
@@ -53,7 +54,7 @@ const Index = () => {
             return data.data;
           } else {
             let { data } = await axios.get(
-              "https://akrapex-decentralized-system.onrender.com/api/v1/properties/search"
+              `${url}/api/v1/properties/search`
             );
             console.log(data);
             setIsLoading(false);
