@@ -38,7 +38,7 @@ const NavBar = () => {
           <NavLink to="/properties">Properties</NavLink>
           <NavLink to="/firstbridge">How it works</NavLink>
         </div>
-        <Link to="https://tally.so/r/mVOPVa">
+        <Link to="/newslater">
           <button className=" text-white font-medium font-inter bg-[#E5BD3E] py-2 px-5 rounded-[20px] ">
            Get started
            </button>

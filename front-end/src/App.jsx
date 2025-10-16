@@ -12,6 +12,7 @@ import AvailableCourses from "./Pages/AvailableCourses";
 import ServiceProfessional from "./Pages/ServiceProfessional";
 import Index from "./marketplace/index";
 import Property from "./marketplace/Property";
+import Newslater from "./Pages/Newslater";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/secondbridge" element={<SecondBridge />} />
           <Route path="/thirdbridge" element={<ThirdBridge />} />
           <Route path="/stakeholderspage" element={<StakeholdersPage />} />
+          <Route path="/newslater" element={<Newslater />} />
           <Route
             path="/serviceprofessional"
             element={<ServiceProfessional />}

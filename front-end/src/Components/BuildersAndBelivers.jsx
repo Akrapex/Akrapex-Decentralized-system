@@ -12,9 +12,9 @@ const BuildersAndBelivers = ({title, description}) => {
         <p className="font-normal font-inter text-primary w-full pt-7">
           {description}
         </p>
-        <Link to="https://tally.so/r/mVOPVa">
-          <button className="text-white font-medium font-inter bg-yellow py-2 px-5 rounded-[20px] mt-20">
-            Join waitlist <IoIosArrowRoundForward className="inline-block h-[inherit] bg-white text-black rounded-full p-1 w-auto"/>
+        <Link to="/newslater">
+          <button className="text-white font-medium text-2xl font-inter bg-yellow py-6 px-24 rounded-[40px] mt-20">
+            Get Started 
           </button>
         </Link>
       </div>
